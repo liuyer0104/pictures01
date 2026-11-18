@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>行迹 · 摄影作品集</title>
+<meta name="description" content="王之璐的摄影作品集：山湖、海岸、建筑、村野、人间，三十八帧旅途切片。">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23181716"/><circle cx="16" cy="16" r="7.4" fill="none" stroke="%23FAF9F6" stroke-width="1.6"/><circle cx="16" cy="16" r="2.3" fill="%23FAF9F6"/></svg>'>
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="preconnect" href="https://sf3-scmcdn-cn.feishucdn.com" crossorigin>
+<link rel="preload" href="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/lark-miaoda-fonts/fonts/noto-serif-sc/6b0121a11792.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/lark-miaoda-fonts/fonts/noto-serif-sc/a50043aeca97.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400&amp;display=swap">
+<style>
+:root{
+  --paper:#FAF9F6;--ink:#181716;--graphite:#77726B;--line:#E1DDD5;--wash:#EFECE5;--pine:#37514E;--night:#0C0B0A;
+  --serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --pad:20px;--bar:56px;
+}
+@media (min-width:768px){:root{--pad:40px}}
+@media (min-width:1200px){:root{--pad:64px}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.7 "PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,-apple-system,sans-serif}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:inherit}
+a{color:inherit;text-decoration:none}
+[hidden]{display:none!important}
+::selection{background:#CBD8D5}
+:focus-visible{outline:2px solid var(--pine);outline-offset:3px}
+.serif{font-family:var(--serif)}
+
+/* ---------- 顶栏 ---------- */
+.bar{position:fixed;left:0;right:0;top:0;height:var(--bar);background:var(--paper);border-bottom:1px solid var(--line);z-index:60}
+.bar-in{height:100%;max-width:1520px;margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;gap:18px}
+.mark{font-family:var(--serif);font-size:14px;letter-spacing:.14em;white-space:nowrap}
+.mark i{font-style:normal;color:var(--graphite);padding:0 4px}
+.bar-nav{display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);font-size:13px;letter-spacing:.06em}
+.bar-nav a{color:var(--graphite);padding:6px 0;white-space:nowrap}
+.bar-nav a:hover{color:var(--ink)}
+.nav-extra{display:none}
+@media (min-width:640px){.nav-extra{display:inline}}
+.manage{color:var(--pine);border-bottom:1px solid #C6D2CF;padding:3px 0;white-space:nowrap}
+
+/* ---------- 封面 ---------- */
+.cover{max-width:1520px;margin:0 auto;padding:calc(var(--bar) + 36px) var(--pad) 0}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 18px;font-size:11px;letter-spacing:.3em;color:var(--graphite)}
+.kicker::before{content:"";width:22px;height:1px;background:var(--graphite);display:block}
+.wordmark{font-family:var(--serif);font-weight:400;font-size:clamp(64px,17vw,148px);line-height:.94;letter-spacing:.12em;margin:0 0 24px;text-indent:.04em}
+.lede{margin:0 0 26px;max-width:26em;color:#3A3630;font-size:15px;line-height:1.85}
+.cover-meta{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:12px;color:var(--graphite)}
+.cover-meta li{display:flex;gap:8px}
+.cover-meta .k{color:#ABA59C}
+.cover-media{margin-top:34px}
+.cover-btn{display:block;width:100%}
+.cover-img{width:100%;height:auto;background:var(--wash)}
+.cover-cap{display:flex;align-items:baseline;gap:12px;padding-top:10px;font-size:11px;color:var(--graphite);letter-spacing:.06em}
+.cover-cap .ttl{color:var(--ink);font-size:13px;letter-spacing:.04em}
+@media (min-width:900px){
+  .cover{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);column-gap:clamp(40px,6vw,96px);align-items:end;padding-top:calc(var(--bar) + clamp(56px,9vh,112px))}
+  .cover-copy{align-self:center;padding-bottom:0}
+  .cover-main{margin-top:0}
+  .cover-media{margin-top:0}
+  .cover-img{height:min(74vh,840px);object-fit:cover;object-position:50% 38%}
+}
+
+/* ---------- 作品区 ---------- */
+.plates-sec{max-width:1520px;margin:0 auto;padding:clamp(44px,7vh,84px) var(--pad) 0;scroll-margin-top:90px}
+.strip{display:flex;flex-direction:column;gap:10px;padding:12px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);background:var(--paper)}
+@media (min-width:768px){.strip{position:sticky;top:var(--bar);z-index:30;flex-direction:row;align-items:center;justify-content:space-between;gap:28px}}
+.chips{display:flex;gap:clamp(14px,2vw,26px);overflow-x:auto;scrollbar-width:none;padding:2px 0}
+.chips::-webkit-scrollbar{display:none}
+.chip{display:flex;align-items:baseline;gap:5px;font-size:13px;color:var(--graphite);white-space:nowrap;padding:3px 0;border-bottom:1px solid transparent}
+.chip .n{font-size:10px;color:#ABA59C;font-variant-numeric:tabular-nums}
+.chip:hover{color:var(--ink)}
+.chip.is-on{color:var(--ink);border-bottom-color:var(--ink)}
+.strip-side{display:flex;align-items:center;gap:16px;justify-content:space-between}
+.search{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--line);padding:5px 0;flex:1;min-width:0}
+.search svg{width:14px;height:14px;flex:none;stroke:var(--graphite);fill:none;stroke-width:1.5}
+.search input{border:0;background:none;padding:0;width:100%;min-width:0;font-size:16px;color:var(--ink);outline:none}
+.search input::placeholder{color:#ABA59C}
+@media (min-width:768px){.search{width:210px;flex:none}}
+#count{font-size:11px;color:var(--graphite);white-space:nowrap;font-variant-numeric:tabular-nums}
+
+.plates{padding-top:clamp(26px,4vh,44px)}
+.plates.is-cols{display:flex;align-items:flex-start}
+.pcol{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:34px}
+.plate{margin:0;break-inside:avoid}
+.plate-btn{display:block;width:100%}
+.plate-btn img{width:100%;height:auto;background:var(--wash);outline:1px solid rgba(24,23,22,.075);outline-offset:-1px}
+.cap{display:flex;align-items:baseline;gap:10px;padding-top:9px}
+.no{font-family:var(--serif);font-size:11px;color:#ABA59C;letter-spacing:.04em;font-variant-numeric:tabular-nums;flex:none}
+.ttl{font-size:14px;letter-spacing:.02em;min-width:0}
+.ct{margin-left:auto;font-size:11px;color:var(--graphite);white-space:nowrap}
+.note{display:block;font-size:12px;color:var(--graphite);padding-top:3px;max-width:38em}
+.empty{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:64px 0;font-size:14px;color:var(--graphite)}
+
+/* ---------- 索引 / 自述 ---------- */
+.index-sec,.about-sec{max-width:1520px;margin:0 auto;padding:clamp(56px,9vh,110px) var(--pad) 0;scroll-margin-top:90px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-top:1px solid var(--ink);padding-top:13px;margin-bottom:clamp(20px,3vh,34px)}
+.sec-head h2{font-family:var(--serif);font-weight:400;font-size:20px;letter-spacing:.1em;margin:0}
+.sec-head .hint{font-size:11px;color:var(--graphite);letter-spacing:.04em}
+.index-grid{display:grid;grid-template-columns:1fr;gap:0 36px}
+@media (min-width:640px){.index-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.index-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1240px){.index-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.idx-group{padding-bottom:24px}
+.idx-group h3{margin:0 0 8px;font-size:12px;font-weight:400;letter-spacing:.18em;color:var(--graphite)}
+.idx-group ul{list-style:none;margin:0;padding:0}
+.idx-item{display:flex;align-items:baseline;gap:10px;width:100%;padding:5px 0;font-size:13px;border-bottom:1px solid #EDEAE2}
+.idx-item:hover{color:var(--pine)}
+.idx-cat{margin-left:auto;font-size:11px;color:#ABA59C}
+.about-grid{display:grid;grid-template-columns:1fr;gap:22px}
+@media (min-width:900px){.about-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,80px)}}
+.about-copy{font-size:15px;line-height:1.95;color:#3A3630;max-width:34em}
+.about-copy p{margin:0 0 1em}
+.about-side{display:flex;flex-direction:column;gap:12px;font-size:12px;color:var(--graphite);line-height:1.9}
+.about-side .rule{width:100%;height:1px;background:var(--line)}
+
+/* ---------- 页脚 ---------- */
+.foot{max-width:1520px;margin:clamp(56px,8vh,100px) auto 0;padding:18px var(--pad) 44px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:11px;color:var(--graphite);letter-spacing:.04em}
+.foot-links{display:flex;gap:20px}
+.foot-links button,.foot-links a{color:var(--graphite)}
+.foot-links button:hover,.foot-links a:hover{color:var(--ink)}
+
+/* ---------- 大图 ---------- */
+.light{position:fixed;inset:0;z-index:100;background:var(--night);color:#F1EEE7;display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+.light-top{display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,3vw,32px);font-size:11px;letter-spacing:.14em;color:#9C968C}
+.light-stage{display:grid;place-items:center;padding:0 clamp(8px,2vw,24px);min-height:0}
+.light-img{max-width:min(94vw,1680px);max-height:calc(100dvh - 176px);width:auto;height:auto;object-fit:contain}
+.light-cap{display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid rgba(255,255,255,.15);padding:14px clamp(16px,3vw,32px) 18px;flex-wrap:wrap}
+.light-info{display:flex;align-items:baseline;gap:12px;min-width:0}
+.light-title{font-family:var(--serif);font-size:17px;letter-spacing:.06em}
+.light-meta{font-size:11px;color:#9C968C;letter-spacing:.06em}
+.light-nav{display:flex;align-items:center;gap:6px}
+.light-btn{width:44px;height:44px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.22);color:#E7E4DC}
+.light-btn:hover{border-color:#F1EEE7;background:rgba(255,255,255,.06)}
+.light-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.5}
+.light-count{font-size:11px;color:#9C968C;letter-spacing:.1em;font-variant-numeric:tabular-nums;padding:0 8px;min-width:64px;text-align:center}
+
+/* ---------- 管理面板 ---------- */
+.scrim{position:fixed;inset:0;background:rgba(20,19,18,.38);z-index:110}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(470px,100%);background:var(--paper);border-left:1px solid var(--line);z-index:120;transform:translateX(102%);transition:transform .32s cubic-bezier(.4,0,.2,1);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain}
+.drawer.is-open{transform:none}
+.drawer-head{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;background:var(--paper);border-bottom:1px solid var(--line)}
+.drawer-title{font-family:var(--serif);font-size:17px;letter-spacing:.1em}
+.icon-btn{width:38px;height:38px;display:grid;place-items:center;border:1px solid transparent;color:var(--graphite)}
+.icon-btn:hover{border-color:var(--line);color:var(--ink)}
+.icon-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.5}
+.drawer-tools{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.drawer-tools .btn{padding:9px 2px;white-space:nowrap;font-size:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;font-size:12px;letter-spacing:.04em;border:1px solid var(--line);background:#fff;cursor:pointer;min-height:38px}
+.btn:hover{border-color:var(--ink)}
+.btn-primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-primary:hover{background:#000}
+.btn-danger{color:#8C3A2E;border-color:#E6D6D1}
+.drawer-hint{padding:12px 18px;font-size:11px;line-height:1.8;color:var(--graphite);border-bottom:1px solid var(--line)}
+.copybox{border-bottom:1px solid var(--line)}
+.copy-toggle{width:100%;justify-content:space-between;border:0;background:transparent;padding:12px 18px;min-height:44px;color:var(--ink);font-size:12px;letter-spacing:.06em}
+.copy-toggle:hover{background:var(--wash)}
+.copy-toggle .copy-arrow{font-size:11px;color:var(--graphite);transition:transform .18s ease}
+.copy-toggle.is-open .copy-arrow{transform:rotate(180deg)}
+.copy-body{display:grid;gap:12px;padding:2px 18px 18px}
+.copy-body .field span{font-size:11px;color:var(--graphite);letter-spacing:.06em}
+.copy-body input{width:100%;font:inherit;font-size:16px;padding:7px 9px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:0}
+.copy-body textarea{width:100%;font:inherit;font-size:16px;line-height:1.7;padding:8px 9px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:0;resize:vertical}
+.copy-note{font-size:11px;line-height:1.7;color:var(--graphite)}
+.drawer-search{padding:12px 18px 4px}
+.drawer-search input{width:100%;font-size:16px;padding:8px 10px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+#adminList{padding-bottom:40px}
+.arow{border-bottom:1px solid #EDEAE2}
+.arow-head{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 18px}
+.athumb{width:44px;height:44px;object-fit:cover;background:var(--wash)}
+.arow-main{display:flex;flex-direction:column;gap:1px;min-width:0}
+.arow-title{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arow-sub{font-size:11px;color:var(--graphite)}
+.arow-ops{display:flex;align-items:center}
+.mini{width:40px;height:40px;display:grid;place-items:center;color:var(--graphite)}
+.mini:hover{color:var(--ink)}
+.mini svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5}
+.arow-body{display:grid;gap:10px;padding:2px 18px 16px}
+.field{display:flex;flex-direction:column;gap:4px}
+.field span{font-size:11px;color:var(--graphite);letter-spacing:.08em}
+.field input,.field select{font:inherit;font-size:16px;padding:7px 9px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:0;width:100%}
+.arow-body .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.replace{display:inline-flex;align-items:center;justify-content:center;padding:9px;border:1px dashed var(--line);font-size:12px;color:var(--graphite);cursor:pointer}
+.replace:hover{border-color:var(--ink);color:var(--ink)}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,12px);background:var(--ink);color:var(--paper);font-size:12px;letter-spacing:.05em;padding:9px 16px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:200;max-width:86vw;text-align:center}
+.toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="mark" href="#top">王之璐<i>·</i>摄影</a>
+    <nav class="bar-nav">
+      <a href="#plates">作品</a>
+      <a href="#index" class="nav-extra">索引</a>
+      <a href="#about" class="nav-extra">自述</a>
+      <button class="manage" id="openAdmin" type="button">管理</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="cover">
+    <div class="cover-copy">
+      <p class="kicker">摄影选辑</p>
+      <div class="cover-main">
+        <h1 class="wordmark">行迹</h1>
+        <p class="lede">三十八帧，分作五辑：山湖、海岸、建筑、村野、人间。都是旅途中随手留下的光，没有脚本，只有当时站的位置。</p>
+        <ul class="cover-meta">
+          <li><span class="k">辑</span><span class="v">五辑</span></li>
+          <li><span class="k">帧</span><span class="v">三十八</span></li>
+          <li><span class="k">取景</span><span class="v">西域 · 海岸 · 江南 · 欧洲</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cover-media" id="cover"><button class="cover-btn" type="button" aria-label="查看封面大图：向西"><img class="cover-img" id="coverImg" src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LZbPbBUQYoWq8mxQdqScKtibn3g" width="1279" height="1706" alt="向西" fetchpriority="high" decoding="async"></button><p class="cover-cap"><span>封面</span><span class="ttl" id="coverTtl">向西</span></p></div>
+  </section>
+
+  <section class="plates-sec" id="plates">
+    <div class="strip">
+      <div class="chips" role="tablist" aria-label="按题材筛选">
+        <button class="chip is-on" type="button" role="tab" aria-selected="true" data-cat="全部">全部<span class="n">37</span></button>
+        <button class="chip" type="button" role="tab" aria-selected="false" data-cat="山湖">山湖<span class="n">9</span></button>
+        <button class="chip" type="button" role="tab" aria-selected="false" data-cat="海岸">海岸<span class="n">5</span></button>
+        <button class="chip" type="button" role="tab" aria-selected="false" data-cat="建筑">建筑<span class="n">10</span></button>
+        <button class="chip" type="button" role="tab" aria-selected="false" data-cat="村野">村野<span class="n">6</span></button>
+        <button class="chip" type="button" role="tab" aria-selected="false" data-cat="人间">人间<span class="n">7</span></button>
+      </div>
+      <div class="strip-side">
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16.2" y1="16.2" x2="21" y2="21"></line></svg>
+          <input id="search" type="search" placeholder="搜标题、地点、说明" aria-label="搜索作品">
+        </div>
+        <span id="count">37 帧</span>
+      </div>
+    </div>
+
+    <div class="plates" id="grid">
+      <figure class="plate" data-id="w02" data-cat="山湖" data-text="一棵树 山湖"><button class="plate-btn" type="button" aria-label="查看大图：一棵树"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DcY6bsrZHoYgy2xw438cpi2FnOe" width="1800" height="1012" alt="一棵树" decoding="async"><span class="cap"><span class="ttl" data-bind="title">一棵树</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w03" data-cat="山湖" data-text="湖的另一边 山湖"><button class="plate-btn" type="button" aria-label="查看大图：湖的另一边"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/SjxVbDFE6oJlOyxSQvJcQSTwn6f" width="1800" height="837" alt="湖的另一边" decoding="async"><span class="cap"><span class="ttl" data-bind="title">湖的另一边</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w04" data-cat="山湖" data-text="栈道 山湖"><button class="plate-btn" type="button" aria-label="查看大图：栈道"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LEVxbDt6QojPZKxAXJNcUfxwnXe" width="837" height="1800" alt="栈道" decoding="async"><span class="cap"><span class="ttl" data-bind="title">栈道</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w05" data-cat="山湖" data-text="云落在草上 山湖"><button class="plate-btn" type="button" aria-label="查看大图：云落在草上"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/QM9cb6luEoPF5YxdScicYsZbn8B" width="1355" height="1800" alt="云落在草上" decoding="async"><span class="cap"><span class="ttl" data-bind="title">云落在草上</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w06" data-cat="山湖" data-text="越野 山湖"><button class="plate-btn" type="button" aria-label="查看大图：越野"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/L8rZbFneVoa31RxCsgCc8n9wnqf" width="1800" height="837" alt="越野" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">越野</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w07" data-cat="山湖" data-text="第一缕 山湖"><button class="plate-btn" type="button" aria-label="查看大图：第一缕"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ApB4b5cDsodYCTxj49McsXJXnpb" width="1800" height="837" alt="第一缕" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">第一缕</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w08" data-cat="山湖" data-text="并肩 山湖"><button class="plate-btn" type="button" aria-label="查看大图：并肩"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/MRMnb8w4GocAwfx2KOtcETYQn6M" width="1800" height="837" alt="并肩" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">并肩</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w09" data-cat="山湖" data-text="湖岸 山湖"><button class="plate-btn" type="button" aria-label="查看大图：湖岸"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/VhN6bwTaNoG8e5xq3a3c0y9cnbc" width="1800" height="837" alt="湖岸" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">湖岸</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w10" data-cat="山湖" data-text="新月 山湖"><button class="plate-btn" type="button" aria-label="查看大图：新月"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/S8jpbLGdVobr1Ox4PslcK6O5nPg" width="1800" height="837" alt="新月" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">新月</span><span class="ct" data-bind="cat">山湖</span></span></button></figure>
+      <figure class="plate" data-id="w11" data-cat="海岸" data-text="一把面包 海岸"><button class="plate-btn" type="button" aria-label="查看大图：一把面包"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/OszKb5GgOoeiKxx5YdsceFgJnsW" width="1341" height="1800" alt="一把面包" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">一把面包</span><span class="ct" data-bind="cat">海岸</span></span></button></figure>
+      <figure class="plate" data-id="w12" data-cat="海岸" data-text="潮线 海岸"><button class="plate-btn" type="button" aria-label="查看大图：潮线"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/My7cbz9oRo9E9vxUHSbcjMHtnFe" width="1800" height="957" alt="潮线" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">潮线</span><span class="ct" data-bind="cat">海岸</span></span></button></figure>
+      <figure class="plate" data-id="w13" data-cat="海岸" data-text="张开双臂 海岸"><button class="plate-btn" type="button" aria-label="查看大图：张开双臂"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/CTwKblBcaobrR7xBfZBcNDjBn3f" width="1280" height="1700" alt="张开双臂" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">张开双臂</span><span class="ct" data-bind="cat">海岸</span></span></button></figure>
+      <figure class="plate" data-id="w14" data-cat="海岸" data-text="海上的屋子 海岸"><button class="plate-btn" type="button" aria-label="查看大图：海上的屋子"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DEjqbIJfIo6XcYxxoFlcR38Sndf" width="1800" height="837" alt="海上的屋子" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">海上的屋子</span><span class="ct" data-bind="cat">海岸</span></span></button></figure>
+      <figure class="plate" data-id="w15" data-cat="海岸" data-text="粼粼 海岸"><button class="plate-btn" type="button" aria-label="查看大图：粼粼"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Ht0RbZGLmoFKpSxdwyscoYfTnjd" width="1355" height="1800" alt="粼粼" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">粼粼</span><span class="ct" data-bind="cat">海岸</span></span></button></figure>
+      <figure class="plate" data-id="w16" data-cat="建筑" data-text="白穹顶 建筑"><button class="plate-btn" type="button" aria-label="查看大图：白穹顶"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/NORtbKJgSoE9d2xr1EHcCdinnSh" width="1123" height="1800" alt="白穹顶" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">白穹顶</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w17" data-cat="建筑" data-text="雪原教堂 建筑"><button class="plate-btn" type="button" aria-label="查看大图：雪原教堂"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ZanXbjrMIog274xHCplcxzEvnUq" width="1800" height="1309" alt="雪原教堂" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">雪原教堂</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w18" data-cat="建筑" data-text="雾中城 建筑"><button class="plate-btn" type="button" aria-label="查看大图：雾中城"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DCkRbxzKvoiDmPx2QX8cvlovnFh" width="1035" height="1800" alt="雾中城" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">雾中城</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w19" data-cat="建筑" data-text="飞檐 建筑"><button class="plate-btn" type="button" aria-label="查看大图：飞檐"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ErqBb6GQZo2gwixQO1RcZwuUnwc" width="1350" height="1800" alt="飞檐" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">飞檐</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w20" data-cat="建筑" data-text="甜甜圈 建筑"><button class="plate-btn" type="button" aria-label="查看大图：甜甜圈"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/D6KobnrzUo9FYmx6TUUctJQxnoc" width="1279" height="1706" alt="甜甜圈" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">甜甜圈</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w21" data-cat="建筑" data-text="塔楼 建筑"><button class="plate-btn" type="button" aria-label="查看大图：塔楼"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DL0Mb63xKoPds3xkpjvc2AR9nDg" width="1350" height="1800" alt="塔楼" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">塔楼</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w22" data-cat="建筑" data-text="展厅 建筑"><button class="plate-btn" type="button" aria-label="查看大图：展厅"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KX2HbdQm3oiY0cxFuRHcGmBKnMg" width="1800" height="1199" alt="展厅" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">展厅</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w23" data-cat="建筑" data-text="潟湖 建筑"><button class="plate-btn" type="button" aria-label="查看大图：潟湖"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/I2Ecb6fnbouGeNxhRLQcDCnZncb" width="1350" height="1800" alt="潟湖" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">潟湖</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w24" data-cat="建筑" data-text="橙园之门 建筑"><button class="plate-btn" type="button" aria-label="查看大图：橙园之门"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/PSjRbrvr5orVx3xJGB4c60b1nPh" width="1350" height="1800" alt="橙园之门" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">橙园之门</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w25" data-cat="建筑" data-text="圣殇 建筑"><button class="plate-btn" type="button" aria-label="查看大图：圣殇"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KMCibKbBroZbpmx5UydcwHapn2f" width="1016" height="1800" alt="圣殇" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">圣殇</span><span class="ct" data-bind="cat">建筑</span></span></button></figure>
+      <figure class="plate" data-id="w26" data-cat="村野" data-text="田垄 村野"><button class="plate-btn" type="button" aria-label="查看大图：田垄"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XU3obeXUFoLI3ExE9gXc3bF5nJb" width="1800" height="1140" alt="田垄" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">田垄</span><span class="ct" data-bind="cat">村野</span></span></button></figure>
+      <figure class="plate" data-id="w27" data-cat="村野" data-text="廊桥 村野"><button class="plate-btn" type="button" aria-label="查看大图：廊桥"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P80vbjmWLoqE6PxT5bbc3FKnnCg" width="1800" height="1142" alt="廊桥" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">廊桥</span><span class="ct" data-bind="cat">村野</span></span></button></figure>
+      <figure class="plate" data-id="w28" data-cat="村野" data-text="石壁观音 村野"><button class="plate-btn" type="button" aria-label="查看大图：石壁观音"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/IeP6b60Suo67p9x5BMVc4NRFnId" width="1350" height="1800" alt="石壁观音" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">石壁观音</span><span class="ct" data-bind="cat">村野</span></span></button></figure>
+      <figure class="plate" data-id="w29" data-cat="村野" data-text="水口 村野"><button class="plate-btn" type="button" aria-label="查看大图：水口"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/TjuRbvMNZouc7PxyoigcMBkznrd" width="1330" height="1800" alt="水口" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">水口</span><span class="ct" data-bind="cat">村野</span></span></button></figure>
+      <figure class="plate" data-id="w30" data-cat="村野" data-text="倒影 村野"><button class="plate-btn" type="button" aria-label="查看大图：倒影"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LNQrbvIBZojgSqxzPCNcrMG4n7d" width="1800" height="1350" alt="倒影" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">倒影</span><span class="ct" data-bind="cat">村野</span></span></button></figure>
+      <figure class="plate" data-id="w31" data-cat="村野" data-text="逆光 村野"><button class="plate-btn" type="button" aria-label="查看大图：逆光"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/RZeIbthJCoz06uxJJQBcqGw5nnb" width="1279" height="1706" alt="逆光" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">逆光</span><span class="ct" data-bind="cat">村野</span></span></button></figure>
+      <figure class="plate" data-id="w32" data-cat="人间" data-text="午后 人间"><button class="plate-btn" type="button" aria-label="查看大图：午后"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/VGa3bkdNZoy1PVxKe2Jc4MnWnbc" width="1800" height="976" alt="午后" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">午后</span><span class="ct" data-bind="cat">人间</span></span></button></figure>
+      <figure class="plate" data-id="w33" data-cat="人间" data-text="永存 人间"><button class="plate-btn" type="button" aria-label="查看大图：永存"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/HsdVbJrDYoNtJPxSIMqcGwrPnQb" width="1279" height="1706" alt="永存" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">永存</span><span class="ct" data-bind="cat">人间</span></span></button></figure>
+      <figure class="plate" data-id="w34" data-cat="人间" data-text="廊下 人间"><button class="plate-btn" type="button" aria-label="查看大图：廊下"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ZfL8b87Oco0MwmxGnyUceYOBnkh" width="1355" height="1800" alt="廊下" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">廊下</span><span class="ct" data-bind="cat">人间</span></span></button></figure>
+      <figure class="plate" data-id="w35" data-cat="人间" data-text="影子 人间"><button class="plate-btn" type="button" aria-label="查看大图：影子"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/NMSqbWnFjoumrnxx6Mlcf0Gpn5f" width="1140" height="1800" alt="影子" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">影子</span><span class="ct" data-bind="cat">人间</span></span></button></figure>
+      <figure class="plate" data-id="w36" data-cat="人间" data-text="奔向你 人间"><button class="plate-btn" type="button" aria-label="查看大图：奔向你"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/IFg9bPuRkoOIbYxllnlcVF6CnHf" width="1080" height="711" alt="奔向你" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">奔向你</span><span class="ct" data-bind="cat">人间</span></span></button></figure>
+      <figure class="plate" data-id="w37" data-cat="人间" data-text="贴面 人间"><button class="plate-btn" type="button" aria-label="查看大图：贴面"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/HMUobnE7AolPZ1xNFxScnN1znJh" width="1800" height="1350" alt="贴面" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">贴面</span><span class="ct" data-bind="cat">人间</span></span></button></figure>
+      <figure class="plate" data-id="w38" data-cat="人间" data-text="街头 人间"><button class="plate-btn" type="button" aria-label="查看大图：街头"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XkBCbZwlto2fwLxY2U5c54ENn8f" width="1199" height="1800" alt="街头" loading="lazy" decoding="async"><span class="cap"><span class="ttl" data-bind="title">街头</span><span class="ct" data-bind="cat">人间</span></span></button></figure>
+    </div>
+
+    <div class="empty" id="empty" hidden>
+      <span>没有找到符合条件的照片。</span>
+      <button class="btn" id="clearFilter" type="button">看全部作品</button>
+    </div>
+  </section>
+
+  <section class="index-sec" id="index">
+    <div class="sec-head">
+      <h2>索引</h2>
+      <span class="hint">按标题翻到某一帧</span>
+    </div>
+    <div class="index-grid" id="indexGrid">
+      <div class="idx-group"><h3>山湖</h3><ul><li><button class="idx-item" type="button" data-id="w02"><span class="idx-ttl">一棵树</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w03"><span class="idx-ttl">湖的另一边</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w04"><span class="idx-ttl">栈道</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w05"><span class="idx-ttl">云落在草上</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w06"><span class="idx-ttl">越野</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w07"><span class="idx-ttl">第一缕</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w08"><span class="idx-ttl">并肩</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w09"><span class="idx-ttl">湖岸</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w10"><span class="idx-ttl">新月</span><span class="idx-cat"></span></button></li></ul></div>
+      <div class="idx-group"><h3>海岸</h3><ul><li><button class="idx-item" type="button" data-id="w11"><span class="idx-ttl">一把面包</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w12"><span class="idx-ttl">潮线</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w13"><span class="idx-ttl">张开双臂</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w14"><span class="idx-ttl">海上的屋子</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w15"><span class="idx-ttl">粼粼</span><span class="idx-cat"></span></button></li></ul></div>
+      <div class="idx-group"><h3>建筑</h3><ul><li><button class="idx-item" type="button" data-id="w16"><span class="idx-ttl">白穹顶</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w17"><span class="idx-ttl">雪原教堂</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w18"><span class="idx-ttl">雾中城</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w19"><span class="idx-ttl">飞檐</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w20"><span class="idx-ttl">甜甜圈</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w21"><span class="idx-ttl">塔楼</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w22"><span class="idx-ttl">展厅</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w23"><span class="idx-ttl">潟湖</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w24"><span class="idx-ttl">橙园之门</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w25"><span class="idx-ttl">圣殇</span><span class="idx-cat"></span></button></li></ul></div>
+      <div class="idx-group"><h3>村野</h3><ul><li><button class="idx-item" type="button" data-id="w26"><span class="idx-ttl">田垄</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w27"><span class="idx-ttl">廊桥</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w28"><span class="idx-ttl">石壁观音</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w29"><span class="idx-ttl">水口</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w30"><span class="idx-ttl">倒影</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w31"><span class="idx-ttl">逆光</span><span class="idx-cat"></span></button></li></ul></div>
+      <div class="idx-group"><h3>人间</h3><ul><li><button class="idx-item" type="button" data-id="w32"><span class="idx-ttl">午后</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w33"><span class="idx-ttl">永存</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w34"><span class="idx-ttl">廊下</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w35"><span class="idx-ttl">影子</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w36"><span class="idx-ttl">奔向你</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w37"><span class="idx-ttl">贴面</span><span class="idx-cat"></span></button></li><li><button class="idx-item" type="button" data-id="w38"><span class="idx-ttl">街头</span><span class="idx-cat"></span></button></li></ul></div>
+    </div>
+  </section>
+
+  <section class="about-sec" id="about">
+    <div class="sec-head">
+      <h2>关于这些照片</h2>
+      <span class="hint">自述</span>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>照片大多拍在旅途中。清晨在湖边等第一缕光，正午躲进老城的廊柱下，傍晚沿着海岸线追一群落下来的鸟。器材就是手上那一台，构图靠来回走几步。</p>
+        <p>这里没有专题系列，也没有编号叙事，只是把看过的景象按题材排成一册。想找某一张，用上面的分类或搜索，也可以在索引里按标题翻。</p>
+      </div>
+      <div class="about-side">
+        <span>五辑：山湖 / 海岸 / 建筑 / 村野 / 人间</span>
+        <div class="rule" aria-hidden="true"></div>
+        <span>照片版权归作者所有，转载或商用请先联系。</span>
+        <div class="rule" aria-hidden="true"></div>
+        <span>增删改查：左上角「管理」可新增、编辑、排序、删除作品；改动先存在本机浏览器，点「导出数据」可留存备份。</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>行迹 · 摄影选辑</span>
+  <div class="foot-links">
+    <a href="#top">回到顶部</a>
+    <button class="open-admin" type="button">管理作品</button>
+    <span>© 王之璐</span>
+  </div>
+</footer>
+
+<!-- ===== 大图 ===== -->
+<div class="light" id="light" role="dialog" aria-modal="true" aria-label="作品大图" hidden>
+  <div class="light-top">
+    <span>行迹</span>
+    <button class="light-btn" id="lightClose" type="button" aria-label="关闭大图">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+    </button>
+  </div>
+  <div class="light-stage" id="lightStage">
+    <img class="light-img" id="lightImg" src="" alt="">
+  </div>
+  <div class="light-cap">
+    <div class="light-info">
+      <span class="light-title" id="lightTitle"></span>
+      <span class="light-meta" id="lightMeta"></span>
+    </div>
+    <div class="light-nav">
+      <button class="light-btn" id="prevBtn" type="button" aria-label="上一张">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15,5 8,12 15,19"></polyline></svg>
+      </button>
+      <span class="light-count" id="lightCount"></span>
+      <button class="light-btn" id="nextBtn" type="button" aria-label="下一张">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9,5 16,12 9,19"></polyline></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 管理面板 ===== -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="管理作品">
+  <div class="drawer-head">
+    <span class="drawer-title">管理作品</span>
+    <button class="icon-btn" id="closeAdmin" type="button" aria-label="收起管理面板">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+    </button>
+  </div>
+  <div class="drawer-tools">
+    <label class="btn btn-primary">新增照片<input type="file" id="addFiles" accept="image/*" multiple hidden></label>
+    <button class="btn" id="exportBtn" type="button">导出数据</button>
+    <label class="btn">导入数据<input type="file" id="importFile" accept="application/json,.json" hidden></label>
+    <button class="btn" id="copyBtn" type="button">复制代码</button>
+    <button class="btn btn-danger" id="resetBtn" type="button">恢复初始</button>
+  </div>
+  <div class="drawer-hint">改动即时保存在本机浏览器；换设备或长期留存请点「导出数据」。列表第一张即封面。图片会压缩到长边 1600px 再存入，原图请自行另存。</div>
+  <div class="copybox">
+    <button class="btn copy-toggle" id="copyToggle" type="button" aria-expanded="false" aria-controls="copyBody">
+      <span>页面文案</span><span class="copy-arrow" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="copy-body" id="copyBody" hidden>
+      <div class="field"><span>自述正文（空行分段）</span><textarea id="cAbout" rows="8"></textarea></div>
+      <div class="field"><span>自述右侧第一行</span><input id="cA" type="text"></div>
+      <div class="field"><span>自述右侧第二行</span><input id="cB" type="text"></div>
+      <div class="field"><span>自述右侧第三行</span><textarea id="cC" rows="3"></textarea></div>
+      <div class="field"><span>抽屉顶部的说明小字</span><textarea id="cHint" rows="3"></textarea></div>
+      <div class="copy-note">只改文字，不改排版；和作品一样存本机浏览器，并一起写进导出的 JSON。</div>
+      <button class="btn" id="copyReset" type="button">文案恢复默认</button>
+    </div>
+  </div>
+  <div class="drawer-search"><input id="adminSearch" type="search" placeholder="在列表中查标题、地点" aria-label="搜索作品列表"></div>
+  <div id="adminList"></div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+  var INITIAL = [{"id":"w01","title":"向西","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LZbPbBUQYoWq8mxQdqScKtibn3g","w":1279,"h":1706},{"id":"w02","title":"一棵树","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DcY6bsrZHoYgy2xw438cpi2FnOe","w":1800,"h":1012},{"id":"w03","title":"湖的另一边","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/SjxVbDFE6oJlOyxSQvJcQSTwn6f","w":1800,"h":837},{"id":"w04","title":"栈道","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LEVxbDt6QojPZKxAXJNcUfxwnXe","w":837,"h":1800},{"id":"w05","title":"云落在草上","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/QM9cb6luEoPF5YxdScicYsZbn8B","w":1355,"h":1800},{"id":"w06","title":"越野","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/L8rZbFneVoa31RxCsgCc8n9wnqf","w":1800,"h":837},{"id":"w07","title":"第一缕","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ApB4b5cDsodYCTxj49McsXJXnpb","w":1800,"h":837},{"id":"w08","title":"并肩","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/MRMnb8w4GocAwfx2KOtcETYQn6M","w":1800,"h":837},{"id":"w09","title":"湖岸","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/VhN6bwTaNoG8e5xq3a3c0y9cnbc","w":1800,"h":837},{"id":"w10","title":"新月","cat":"山湖","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/S8jpbLGdVobr1Ox4PslcK6O5nPg","w":1800,"h":837},{"id":"w11","title":"一把面包","cat":"海岸","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/OszKb5GgOoeiKxx5YdsceFgJnsW","w":1341,"h":1800},{"id":"w12","title":"潮线","cat":"海岸","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/My7cbz9oRo9E9vxUHSbcjMHtnFe","w":1800,"h":957},{"id":"w13","title":"张开双臂","cat":"海岸","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/CTwKblBcaobrR7xBfZBcNDjBn3f","w":1280,"h":1700},{"id":"w14","title":"海上的屋子","cat":"海岸","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DEjqbIJfIo6XcYxxoFlcR38Sndf","w":1800,"h":837},{"id":"w15","title":"粼粼","cat":"海岸","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Ht0RbZGLmoFKpSxdwyscoYfTnjd","w":1355,"h":1800},{"id":"w16","title":"白穹顶","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/NORtbKJgSoE9d2xr1EHcCdinnSh","w":1123,"h":1800},{"id":"w17","title":"雪原教堂","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ZanXbjrMIog274xHCplcxzEvnUq","w":1800,"h":1309},{"id":"w18","title":"雾中城","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DCkRbxzKvoiDmPx2QX8cvlovnFh","w":1035,"h":1800},{"id":"w19","title":"飞檐","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ErqBb6GQZo2gwixQO1RcZwuUnwc","w":1350,"h":1800},{"id":"w20","title":"甜甜圈","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/D6KobnrzUo9FYmx6TUUctJQxnoc","w":1279,"h":1706},{"id":"w21","title":"塔楼","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/DL0Mb63xKoPds3xkpjvc2AR9nDg","w":1350,"h":1800},{"id":"w22","title":"展厅","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KX2HbdQm3oiY0cxFuRHcGmBKnMg","w":1800,"h":1199},{"id":"w23","title":"潟湖","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/I2Ecb6fnbouGeNxhRLQcDCnZncb","w":1350,"h":1800},{"id":"w24","title":"橙园之门","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/PSjRbrvr5orVx3xJGB4c60b1nPh","w":1350,"h":1800},{"id":"w25","title":"圣殇","cat":"建筑","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KMCibKbBroZbpmx5UydcwHapn2f","w":1016,"h":1800},{"id":"w26","title":"田垄","cat":"村野","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XU3obeXUFoLI3ExE9gXc3bF5nJb","w":1800,"h":1140},{"id":"w27","title":"廊桥","cat":"村野","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P80vbjmWLoqE6PxT5bbc3FKnnCg","w":1800,"h":1142},{"id":"w28","title":"石壁观音","cat":"村野","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/IeP6b60Suo67p9x5BMVc4NRFnId","w":1350,"h":1800},{"id":"w29","title":"水口","cat":"村野","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/TjuRbvMNZouc7PxyoigcMBkznrd","w":1330,"h":1800},{"id":"w30","title":"倒影","cat":"村野","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LNQrbvIBZojgSqxzPCNcrMG4n7d","w":1800,"h":1350},{"id":"w31","title":"逆光","cat":"村野","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/RZeIbthJCoz06uxJJQBcqGw5nnb","w":1279,"h":1706},{"id":"w32","title":"午后","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/VGa3bkdNZoy1PVxKe2Jc4MnWnbc","w":1800,"h":976},{"id":"w33","title":"永存","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/HsdVbJrDYoNtJPxSIMqcGwrPnQb","w":1279,"h":1706},{"id":"w34","title":"廊下","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ZfL8b87Oco0MwmxGnyUceYOBnkh","w":1355,"h":1800},{"id":"w35","title":"影子","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/NMSqbWnFjoumrnxx6Mlcf0Gpn5f","w":1140,"h":1800},{"id":"w36","title":"奔向你","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/IFg9bPuRkoOIbYxllnlcVF6CnHf","w":1080,"h":711},{"id":"w37","title":"贴面","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/HMUobnE7AolPZ1xNFxScnN1znJh","w":1800,"h":1350},{"id":"w38","title":"街头","cat":"人间","place":"","year":"","note":"","src":"https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XkBCbZwlto2fwLxY2U5c54ENn8f","w":1199,"h":1800}];
+  var CATS = ["山湖","海岸","建筑","村野","人间"];
+  var KEY = "xingji.works.v1";
+
+  function $(s,r){return (r||document).querySelector(s);}
+  function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+  function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m];});}
+  function pad2(n){return (n<10?"0":"")+n;}
+
+  var data = INITIAL.map(function(x){return Object.assign({},x);});
+  var state = {cat:"全部", q:""};
+  var visible = [];
+  var navList = [], navIdx = 0, lastFocus = null, plateEls = {}, resizeTimer = null;
+  var hasLocal = false, copy0 = null, copyState = {};
+
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){
+      var arr = JSON.parse(raw);
+      if(arr && arr.length){ data = arr; hasLocal = true; }
+    }
+  }catch(e){}
+
+  var grid = $("#grid"), countEl = $("#count"), emptyEl = $("#empty");
+  var coverBox = $("#cover"), coverImg = $("#coverImg"), coverTtl = $("#coverTtl");
+  var indexGrid = $("#indexGrid"), adminList = $("#adminList");
+  var light = $("#light"), lightImg = $("#lightImg"), lightTitle = $("#lightTitle"),
+      lightMeta = $("#lightMeta"), lightCount = $("#lightCount");
+  var toastEl = $("#toast"), toastTimer = null;
+
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-on"); }, 2400);
+  }
+  function save(quiet){
+    try{
+      localStorage.setItem(KEY, JSON.stringify(data));
+      if(!quiet) toast("已保存到本机");
+      return true;
+    }catch(e){
+      toast("浏览器本地空间不足，改动没能保存，请先导出数据");
+      return false;
+    }
+  }
+  function textOf(it){
+    return [it.title,it.cat,it.place,it.year,it.note].filter(Boolean).join(" ").toLowerCase();
+  }
+  function num(it){ return data.indexOf(it)+1; }
+
+  /* ---------- 页面文案（自述与提示，随作品一起存本机、进导出文件） ---------- */
+  var CKEY = "xingji.copy.v1";
+  function readCopy(){
+    var ps = $$(".about-copy p"), sp = $$(".about-side > span"), h = $(".drawer-hint");
+    return {
+      about: ps.map(function(p){ return p.textContent.trim(); }).filter(Boolean).join("\n\n"),
+      a: sp[0] ? sp[0].textContent.trim() : "",
+      b: sp[1] ? sp[1].textContent.trim() : "",
+      c: sp[2] ? sp[2].textContent.trim() : "",
+      hint: h ? h.textContent.trim() : ""
+    };
+  }
+  function applyCopy(c){
+    var box = $(".about-copy");
+    if(box){
+      var frag = document.createDocumentFragment();
+      String(c.about || "").split("\n\n").forEach(function(t){
+        var plain = t.replace(/\s*\n\s*/g, " ").trim();
+        if(!plain) return;
+        var p = document.createElement("p");
+        p.textContent = plain; frag.appendChild(p);
+      });
+      box.innerHTML = "";
+      if(frag.childNodes.length){ box.appendChild(frag); }
+      else { var empty = document.createElement("p"); empty.textContent = ""; box.appendChild(empty); }
+    }
+    var sp = $$(".about-side > span");
+    if(sp[0]) sp[0].textContent = c.a || "";
+    if(sp[1]) sp[1].textContent = c.b || "";
+    if(sp[2]) sp[2].textContent = c.c || "";
+    var h = $(".drawer-hint"); if(h) h.textContent = c.hint || "";
+  }
+  function saveCopy(){
+    try{ localStorage.setItem(CKEY, JSON.stringify(copyState)); }catch(e){}
+  }
+  function fillCopyForm(){
+    $("#cAbout").value = copyState.about || "";
+    $("#cA").value = copyState.a || "";
+    $("#cB").value = copyState.b || "";
+    $("#cC").value = copyState.c || "";
+    $("#cHint").value = copyState.hint || "";
+  }
+
+  /* ---------- 渲染 ---------- */
+  function plateMarkup(it, no){
+    var lazy = no > 4 ? ' loading="lazy"' : '';
+    var note = it.note ? '<span class="note" data-bind="note">'+esc(it.note)+'</span>' : '';
+    return '<figure class="plate" data-id="'+esc(it.id)+'" data-cat="'+esc(it.cat)+'" data-text="'+esc(textOf(it))+'">'
+      + '<button class="plate-btn" type="button" aria-label="查看大图：'+esc(it.title)+'">'
+      + '<img src="'+esc(it.src)+'" width="'+(it.w||1200)+'" height="'+(it.h||800)+'" alt="'+esc(it.title)+'"'+lazy+' decoding="async">'
+      + '<span class="cap"><span class="ttl" data-bind="title">'+esc(it.title)+'</span><span class="ct" data-bind="cat">'+esc(it.cat)+'</span></span>'
+      + note
+      + '</button></figure>';
+  }
+
+  function renderCover(){
+    var it = data[0];
+    if(!it) return;
+    coverBox.style.display = "";
+    coverImg.src = it.src;
+    coverImg.alt = it.title || "";
+    if(it.w) coverImg.setAttribute("width", it.w);
+    if(it.h) coverImg.setAttribute("height", it.h);
+    coverTtl.textContent = it.title || "未命名";
+  }
+
+  /* 均衡分栏：按预测高度把作品放进当前最矮的一列，避免列尾大片空白 */
+  function gridCols(){ return window.innerWidth >= 1100 ? 3 : (window.innerWidth >= 640 ? 2 : 1); }
+  function layout(){
+    var n = gridCols();
+    var gap = n === 3 ? 36 : (n === 2 ? 24 : 20);
+    var itemGap = n === 1 ? 30 : (n === 2 ? 32 : 40);
+    grid.classList.add("is-cols");
+    grid.style.gap = gap + "px";
+    var cols = [], hs = [], i;
+    grid.innerHTML = "";
+    for(i = 0; i < n; i++){
+      var c = document.createElement("div");
+      c.className = "pcol";
+      c.style.gap = itemGap + "px";
+      grid.appendChild(c); cols.push(c); hs.push(0);
+    }
+    var colW = (grid.clientWidth - gap * (n - 1)) / n;
+    if(!(colW > 0)) colW = 360;
+    var shown = data.slice(1).filter(matches);
+    var hOf = function(it){ return colW * ((it.h || 800) / (it.w || 1200)) + itemGap + 34; };
+    var tail = 6, cut = Math.max(0, shown.length - tail);
+    shown.slice(0, cut).forEach(function(it){
+      var el = plateEls[it.id];
+      if(!el) return;
+      var k = 0;
+      for(var j = 1; j < n; j++){ if(hs[j] < hs[k] - 0.5) k = j; }
+      cols[k].appendChild(el);
+      hs[k] += hOf(it);
+    });
+    if(shown.length > cut && n > 1){
+      /* 末段做一次全组合挑选，避免最后一列被单张竖图顶出长尾 */
+      var rest = shown.slice(cut), total = Math.pow(n, rest.length);
+      var bestMax = Infinity, bestPick = null;
+      for(var t = 0; t < total; t++){
+        var h2 = hs.slice(), pick = [], x = t;
+        for(var q = 0; q < rest.length; q++){
+          var c = x % n; x = Math.floor(x / n);
+          pick.push(c); h2[c] += hOf(rest[q]);
+        }
+        var mx = Math.max.apply(null, h2);
+        if(mx < bestMax - 0.5){ bestMax = mx; bestPick = pick; }
+      }
+      rest.forEach(function(it, q){
+        var el = plateEls[it.id];
+        if(!el) return;
+        cols[bestPick[q]].appendChild(el);
+        hs[bestPick[q]] += hOf(it);
+      });
+    }
+  }
+
+  function renderGrid(){
+    plateEls = {};
+    var holder = document.createElement("div");
+    holder.innerHTML = data.slice(1).map(function(it,i){ return plateMarkup(it, i+1); }).join("");
+    while(holder.firstChild){ plateEls[holder.firstChild.getAttribute("data-id")] = holder.firstChild; grid.appendChild(holder.firstChild); }
+    layout();
+  }
+
+  function renderIndex(){
+    var html = "";
+    CATS.forEach(function(cat){
+      var items = data.slice(1).filter(function(it){ return it.cat === cat; });
+      if(!items.length) return;
+      html += '<div class="idx-group"><h3>'+esc(cat)+'</h3><ul>'
+        + items.map(function(it){
+          return '<li><button class="idx-item" type="button" data-id="'+esc(it.id)+'">'
+            + '<span class="idx-ttl">'+esc(it.title)+'</span>'
+            + '<span class="idx-cat">'+esc(it.place||it.year||"")+'</span></button></li>';
+        }).join("")
+        + '</ul></div>';
+    });
+    indexGrid.innerHTML = html;
+  }
+
+  function renderChips(){
+    $$(".chip").forEach(function(chip){
+      var cat = chip.getAttribute("data-cat");
+      var pool = data.slice(1);
+      var n = cat === "全部" ? pool.length : pool.filter(function(it){ return it.cat === cat; }).length;
+      chip.querySelector(".n").textContent = n;
+    });
+  }
+
+  function matches(it){
+    if(state.cat !== "全部" && it.cat !== state.cat) return false;
+    var q = state.q.trim().toLowerCase();
+    return !q || textOf(it).indexOf(q) > -1;
+  }
+
+  function applyFilter(){
+    visible = data.filter(matches);
+    $$(".chip").forEach(function(c){ c.classList.toggle("is-on", c.getAttribute("data-cat") === state.cat); });
+    layout();
+    var shown = visible.filter(function(it){ return it !== data[0]; });
+    countEl.textContent = shown.length + " 帧";
+    emptyEl.hidden = shown.length > 0;
+    grid.style.display = shown.length ? "" : "none";
+  }
+
+  function renderAll(){
+    renderCover(); renderGrid(); renderIndex(); renderChips(); renderAdmin(); applyFilter();
+  }
+
+  /* ---------- 大图 ---------- */
+  function showCurrent(){
+    var it = navList[navIdx];
+    if(!it) return;
+    lightImg.src = it.src;
+    lightImg.alt = it.title || "";
+    lightTitle.textContent = it.title || "未命名";
+    lightMeta.textContent = [it.cat,it.place,it.year].filter(Boolean).join(" · ");
+    lightCount.textContent = (navIdx+1) + " / " + navList.length;
+  }
+
+  function openLight(id){
+    var inVisible = visible.filter(function(x){ return x.id === id; }).length > 0;
+    navList = inVisible ? visible.slice() : data.slice();
+    if(!(data[0] && data[0].id === id)){
+      navList = navList.filter(function(x){ return x !== data[0]; });
+    }
+    navIdx = navList.map(function(x){ return x.id; }).indexOf(id);
+    if(navIdx < 0){ navList = data; navIdx = data.map(function(x){ return x.id; }).indexOf(id); }
+    lastFocus = document.activeElement;
+    showCurrent();
+    light.hidden = false;
+    document.body.style.overflow = "hidden";
+    $("#lightClose").focus();
+  }
+
+  function closeLight(){
+    light.hidden = true;
+    document.body.style.overflow = "";
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  function step(d){
+    if(!navList.length) return;
+    navIdx = (navIdx + d + navList.length) % navList.length;
+    showCurrent();
+  }
+
+  /* ---------- 管理面板 ---------- */
+  var adminQuery = "";
+
+  function adminRow(it){
+    var cover = data.indexOf(it) === 0;
+    var sub = [it.cat, it.place, it.year].filter(Boolean).join(" · ");
+    return '<div class="arow" data-id="'+esc(it.id)+'">'
+      + '<div class="arow-head">'
+      + '<img class="athumb" src="'+esc(it.src)+'" alt="" loading="lazy">'
+      + '<button class="arow-main" type="button" aria-expanded="false">'
+      + '<span class="arow-title">'+(cover?'封面 · ':'')+esc(it.title||"未命名")+'</span>'
+      + '<span class="arow-sub">'+esc(sub||"未分类")+'</span></button>'
+      + '<div class="arow-ops">'
+      + '<button class="mini" type="button" data-act="up" aria-label="上移"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6,14 12,8 18,14"></polyline></svg></button>'
+      + '<button class="mini" type="button" data-act="down" aria-label="下移"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6,10 12,16 18,10"></polyline></svg></button>'
+      + '<button class="mini" type="button" data-act="del" aria-label="删除"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg></button>'
+      + '</div></div>'
+      + '<div class="arow-body" hidden>'
+      + '<label class="field"><span>标题</span><input data-f="title" type="text" value="'+esc(it.title)+'"></label>'
+      + '<div class="row2">'
+      + '<label class="field"><span>分类</span><select data-f="cat">'+CATS.map(function(c){return '<option'+(c===it.cat?' selected':'')+'>'+esc(c)+'</option>';}).join("")+'</select></label>'
+      + '<label class="field"><span>年份</span><input data-f="year" type="text" value="'+esc(it.year||"")+'"></label>'
+      + '</div>'
+      + '<label class="field"><span>地点</span><input data-f="place" type="text" value="'+esc(it.place||"")+'"></label>'
+      + '<label class="field"><span>一句话说明</span><input data-f="note" type="text" value="'+esc(it.note||"")+'"></label>'
+      + '<label class="replace">替换这张图片<input type="file" accept="image/*" data-act="replace" hidden></label>'
+      + '</div></div>';
+  }
+
+  function renderAdmin(){
+    var list = data;
+    if(adminQuery){
+      list = data.filter(function(it){ return textOf(it).indexOf(adminQuery) > -1; });
+    }
+    adminList.innerHTML = list.length ? list.map(adminRow).join("")
+      : '<div style="padding:26px 18px;font-size:13px;color:var(--graphite)">没有匹配的作品。</div>';
+  }
+
+  function openAdmin(){
+    $("#drawer").classList.add("is-open");
+    $("#scrim").hidden = false;
+    document.body.style.overflow = "hidden";
+    $("#closeAdmin").focus();
+  }
+  function closeAdmin(){
+    $("#drawer").classList.remove("is-open");
+    $("#scrim").hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  function patchPlate(it){
+    $$(".plate", grid).forEach(function(el){
+      if(el.getAttribute("data-id") !== it.id) return;
+      el.setAttribute("data-cat", it.cat);
+      el.setAttribute("data-text", textOf(it));
+      var t = el.querySelector('[data-bind="title"]'), c = el.querySelector('[data-bind="cat"]');
+      if(t) t.textContent = it.title;
+      if(c) c.textContent = it.cat;
+      var n = el.querySelector('[data-bind="note"]');
+      if(it.note && !n){
+        var span = document.createElement("span");
+        span.className = "note"; span.setAttribute("data-bind","note"); span.textContent = it.note;
+        el.querySelector(".plate-btn").appendChild(span);
+      }else if(!it.note && n){ n.remove(); }
+      else if(n){ n.textContent = it.note; }
+    });
+    $$(".idx-item", indexGrid).forEach(function(b){
+      if(b.getAttribute("data-id") === it.id){
+        b.querySelector(".idx-ttl").textContent = it.title;
+        b.querySelector(".idx-cat").textContent = it.place || it.cat;
+      }
+    });
+    if(data[0] && data[0].id === it.id && coverTtl) coverTtl.textContent = it.title;
+    $$(".arow", adminList).forEach(function(row){
+      if(row.getAttribute("data-id") !== it.id) return;
+      var t = row.querySelector(".arow-title"), sb = row.querySelector(".arow-sub");
+      if(t) t.textContent = (data.indexOf(it) === 0 ? "封面 · " : "") + (it.title || "未命名");
+      if(sb) sb.textContent = [it.cat, it.place, it.year].filter(Boolean).join(" · ") || "未分类";
+    });
+  }
+
+  function shrink(file){
+    return new Promise(function(resolve, reject){
+      var img = new Image(), url = URL.createObjectURL(file);
+      img.onload = function(){
+        var s = Math.min(1, 1600 / Math.max(img.width, img.height));
+        var w = Math.round(img.width * s), h = Math.round(img.height * s);
+        var c = document.createElement("canvas");
+        c.width = w; c.height = h;
+        c.getContext("2d").drawImage(img, 0, 0, w, h);
+        URL.revokeObjectURL(url);
+        resolve({src: c.toDataURL("image/jpeg", 0.82), w: w, h: h});
+      };
+      img.onerror = function(){ URL.revokeObjectURL(url); reject(new Error("图片读取失败")); };
+      img.src = url;
+    });
+  }
+
+  function newId(){ return "n" + Date.now().toString(36) + Math.random().toString(36).slice(2,5); }
+
+  /* ---------- 事件 ---------- */
+  grid.addEventListener("click", function(e){
+    var btn = e.target.closest(".plate-btn");
+    if(btn) openLight(btn.closest(".plate").getAttribute("data-id"));
+  });
+
+  coverBox.addEventListener("click", function(){
+    if(data[0]) openLight(data[0].id);
+  });
+  coverBox.addEventListener("keydown", function(e){
+    if(e.key === "Enter" || e.key === " "){ e.preventDefault(); if(data[0]) openLight(data[0].id); }
+  });
+
+  indexGrid.addEventListener("click", function(e){
+    var b = e.target.closest(".idx-item");
+    if(b) openLight(b.getAttribute("data-id"));
+  });
+
+  $(".chips").addEventListener("click", function(e){
+    var c = e.target.closest(".chip");
+    if(!c) return;
+    state.cat = c.getAttribute("data-cat");
+    applyFilter();
+  });
+
+  var searchTimer;
+  $("#search").addEventListener("input", function(e){
+    var v = e.target.value;
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function(){ state.q = v; applyFilter(); }, 140);
+  });
+
+  $("#clearFilter").addEventListener("click", function(){
+    state.cat = "全部"; state.q = ""; $("#search").value = ""; applyFilter();
+  });
+
+  $("#lightClose").addEventListener("click", closeLight);
+  $("#prevBtn").addEventListener("click", function(){ step(-1); });
+  $("#nextBtn").addEventListener("click", function(){ step(1); });
+  light.addEventListener("click", function(e){ if(e.target === light || e.target.classList.contains("light-stage")) closeLight(); });
+
+  var touchX = null;
+  $("#lightStage").addEventListener("pointerdown", function(e){ touchX = e.clientX; });
+  $("#lightStage").addEventListener("pointerup", function(e){
+    if(touchX === null) return;
+    var dx = e.clientX - touchX;
+    touchX = null;
+    if(Math.abs(dx) > 56) step(dx < 0 ? 1 : -1);
+  });
+
+  document.addEventListener("keydown", function(e){
+    if(!light.hidden){
+      if(e.key === "Escape") closeLight();
+      else if(e.key === "ArrowLeft") step(-1);
+      else if(e.key === "ArrowRight") step(1);
+      return;
+    }
+    if(e.key === "Escape" && $("#drawer").classList.contains("is-open")) closeAdmin();
+  });
+
+  $("#openAdmin").addEventListener("click", openAdmin);
+  $$(".open-admin").forEach(function(b){ b.addEventListener("click", openAdmin); });
+  $("#closeAdmin").addEventListener("click", closeAdmin);
+  $("#scrim").addEventListener("click", closeAdmin);
+
+  adminList.addEventListener("click", function(e){
+    var main = e.target.closest(".arow-main");
+    if(main){
+      var body = main.parentNode.parentNode.querySelector(".arow-body");
+      var open = body.hidden;
+      body.hidden = !open;
+      main.setAttribute("aria-expanded", open ? "true" : "false");
+      return;
+    }
+    var act = e.target.closest("[data-act]");
+    if(!act || act.tagName === "INPUT") return;
+    var row = act.closest(".arow");
+    var it = data.filter(function(d){ return d.id === row.getAttribute("data-id"); })[0];
+    if(!it) return;
+    var action = act.getAttribute("data-act");
+    if(action === "up" || action === "down"){
+      var i = data.indexOf(it), j = i + (action === "up" ? -1 : 1);
+      if(j < 0 || j >= data.length) return;
+      data[i] = data[j]; data[j] = it;
+      save(true); renderAll();
+    }else if(action === "del"){
+      if(!confirm("删除《" + (it.title||"未命名") + "》？删除后可以用「恢复初始」找回原始作品。")) return;
+      data = data.filter(function(d){ return d !== it; });
+      save(true); renderAll(); toast("已删除");
+    }
+  });
+
+  adminList.addEventListener("input", function(e){
+    var f = e.target.closest("[data-f]");
+    if(!f) return;
+    var row = f.closest(".arow");
+    var it = data.filter(function(d){ return d.id === row.getAttribute("data-id"); })[0];
+    if(!it) return;
+    it[f.getAttribute("data-f")] = f.value;
+    patchPlate(it);
+    clearTimeout(adminTimer);
+    adminTimer = setTimeout(function(){ save(true); }, 500);
+    if(f.getAttribute("data-f") === "cat"){ renderChips(); applyFilter(); }
+  });
+
+  adminList.addEventListener("change", function(e){
+    var rep = e.target.closest('[data-act="replace"]');
+    if(!rep || !rep.files || !rep.files[0]) return;
+    var row = rep.closest(".arow");
+    var it = data.filter(function(d){ return d.id === row.getAttribute("data-id"); })[0];
+    var file = rep.files[0];
+    shrink(file).then(function(out){
+      it.src = out.src; it.w = out.w; it.h = out.h;
+      save(); renderAll(); toast("图片已替换");
+    }).catch(function(){ toast("图片读取失败，换一张试试"); });
+  });
+
+  var adminTimer;
+  $("#adminSearch").addEventListener("input", function(e){
+    adminQuery = e.target.value.trim().toLowerCase();
+    renderAdmin();
+  });
+
+  $("#addFiles").addEventListener("change", function(e){
+    var files = Array.prototype.slice.call(e.target.files || []);
+    if(!files.length) return;
+    toast("正在处理 " + files.length + " 张…");
+    var seq = Promise.resolve();
+    files.forEach(function(file){
+      seq = seq.then(function(){
+        return shrink(file).then(function(out){
+          data.push({
+            id: newId(),
+            title: (file.name || "未命名").replace(/\.[^.]+$/, ""),
+            cat: state.cat === "全部" ? "人间" : state.cat,
+            place: "", year: "", note: "",
+            src: out.src, w: out.w, h: out.h
+          });
+        }).catch(function(){});
+      });
+    });
+    seq.then(function(){
+      e.target.value = "";
+      save(); renderAll();
+      toast("已加入 " + files.length + " 张，记得填标题和分类");
+    });
+  });
+
+  $("#exportBtn").addEventListener("click", function(){
+    var bundle = {version:1, works:data, copy:copyState};
+    var blob = new Blob([JSON.stringify(bundle, null, 1)], {type:"application/json"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "行迹-作品数据.json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+    toast("已导出 JSON");
+  });
+
+  $("#copyBtn").addEventListener("click", function(){
+    var code = "const WORKS = " + JSON.stringify(data) + ";";
+    function done(){ toast("已复制，替换 HTML 中的 WORKS 即可"); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(code).then(done).catch(fallback);
+    }else{ fallback(); }
+    function fallback(){
+      var t = document.createElement("textarea");
+      t.value = code; document.body.appendChild(t); t.select();
+      try{ document.execCommand("copy"); done(); }catch(err){ toast("复制失败，请改用导出数据"); }
+      t.remove();
+    }
+  });
+
+  var copyTimer;
+  function syncCopy(){
+    copyState = {
+      about: $("#cAbout").value,
+      a: $("#cA").value.trim(),
+      b: $("#cB").value.trim(),
+      c: $("#cC").value,
+      hint: $("#cHint").value.trim()
+    };
+    applyCopy(copyState); saveCopy();
+  }
+  ["#cAbout","#cA","#cB","#cC","#cHint"].forEach(function(sel){
+    $(sel).addEventListener("input", function(){
+      clearTimeout(copyTimer); copyTimer = setTimeout(syncCopy, 250);
+    });
+  });
+  $("#copyToggle").addEventListener("click", function(){
+    var body = $("#copyBody"), open = body.hidden;
+    body.hidden = !open;
+    this.setAttribute("aria-expanded", open ? "true" : "false");
+    this.classList.toggle("is-open", open);
+  });
+  $("#copyReset").addEventListener("click", function(){
+    if(!confirm("把页面文案恢复成最初的样子？")) return;
+    try{ localStorage.removeItem(CKEY); }catch(e){}
+    copyState = Object.assign({}, copy0);
+    applyCopy(copyState); fillCopyForm(); toast("文案已恢复默认");
+  });
+
+  $("#importFile").addEventListener("change", function(e){
+    var f = e.target.files && e.target.files[0];
+    if(!f) return;
+    var r = new FileReader();
+    r.onload = function(){
+      try{
+        var parsed = JSON.parse(String(r.result));
+        var arr = Array.isArray(parsed) ? parsed : (parsed && Array.isArray(parsed.works) ? parsed.works : null);
+        var cc = (!Array.isArray(parsed) && parsed && parsed.copy) ? parsed.copy : null;
+        if(!arr || !arr.length) throw new Error("格式不对");
+        arr = arr.filter(function(x){ return x && x.src; }).map(function(x, i){
+          return {
+            id: x.id || ("i" + i + Date.now().toString(36)),
+            title: x.title || "未命名", cat: CATS.indexOf(x.cat) > -1 ? x.cat : "人间",
+            place: x.place || "", year: x.year || "", note: x.note || "",
+            src: x.src, w: x.w || 1200, h: x.h || 800
+          };
+        });
+        data = arr; save();
+        if(cc && typeof cc === "object"){
+          copyState = Object.assign({}, copy0, cc);
+          applyCopy(copyState); fillCopyForm(); saveCopy();
+        }
+        renderAll(); toast("已导入 " + arr.length + " 件作品" + (cc ? "与页面文案" : ""));
+      }catch(err){ toast("读取失败：请确认是本页导出的 JSON"); }
+      e.target.value = "";
+    };
+    r.readAsText(f);
+  });
+
+  $("#resetBtn").addEventListener("click", function(){
+    if(!confirm("恢复到最初加载的 38 件作品？当前改动会清空。")) return;
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    data = INITIAL.map(function(x){ return Object.assign({},x); });
+    save(true); renderAll(); toast("已恢复初始");
+  });
+
+
+  /* ---------- 启动 ---------- */
+  copy0 = readCopy();
+  copyState = Object.assign({}, copy0);
+  try{
+    var cRaw = localStorage.getItem(CKEY);
+    if(cRaw){ var cc = JSON.parse(cRaw); if(cc && typeof cc === "object") Object.assign(copyState, cc); }
+  }catch(e){}
+  applyCopy(copyState); fillCopyForm();
+
+  $$(".plate", grid).forEach(function(el){ plateEls[el.getAttribute("data-id")] = el; });
+  renderChips();
+  applyFilter();
+  renderAdmin();
+  if(hasLocal) renderAll();
+  window.addEventListener("resize", function(){
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(layout, 160);
+  });
+  $("#coverImg").addEventListener("error", function(){ this.style.opacity = ".35"; });
+})();
+</script>
+</body>
+</html>
+
